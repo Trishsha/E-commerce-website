@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(231, 161, 161);
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+}
+nav{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+    border-radius: 20px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: auto;
+    color: #cab2b2;
+}
+a{
+    text-decoration: none;
+}
+    
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: rgb(72, 55, 112);
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: space-around;
+    justify-content: space-around;
+}
+.col2{
+    flex-basis: 100%;
+    min-width: 300px;
+    color: rgb(56, 55, 112);
+}
+
+.col2 img{
+    max-width: 70%;
+    padding: 50px 0;
+
+}
+.col2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+
+.header{
+    background: radial-gradient(rgb(223, 117, 91),#6b1803);
+}
+.header .row{
+    margin-top: 70px;
+
+}
+
+.catagories{
+    margin : 70px 0;
+}
+.col3{
+    flex-basis: 30px;
+    min-width: 259px;
+    margin-bottom: 30px;
+}
+.col3 img{
+    width: 90%;
+}
+
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.col4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col4 img{
+    width: 100%;
+}
+
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+}
+.title::after{
+    content: '';
+    background: #db121c;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom : 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+h4{
+    color: #555;
+    font-weight: normal;
+
+}
+.col4 p{
+    font-size: 14px;
+}
+
+.col4:hover{
+    transform: translateY(-10px);
+}
+/*--offer--*/
+.offer{
+    background: radial-gradient(rgb(156, 55, 55),#aa0b0b);
+    margin-top: 80px;
+    padding: 30px 0;
+
+}
+.col2 .offer-img{    /*pic size*/
+    padding: 50px;
+}
+small{
+    color:rgb(101, 226, 226);   /*text color*/
+}
+
+/*brands*/
+.brands{
+    margin: 100px auto;
+}
+.col5{
+    width: 150px
+}
+.col5 img{
+    width: 100%;
+    
+    cursor: pointer;
+    filter: grayscale(50%);
+}
+
+.col5 img:hover{
+   filter: grayscale(0);
+}
+/*footer*/
+.footer{
+    background: rgb(33, 18, 163);
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #e0d3d3;
+
+}
+.footer h3{
+    color: rgb(238, 228, 228);
+    margin-bottom: 20px;
+}
+.footer-col1 , .footer-col2, .footer-col3{
+    min-width: 10px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col1{
+    flex-basis: 30%;
+}
+.footer-col2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col2 img{
+    width: 150px;
+    margin-bottom: 20px;
+}
+.footer-col3 {
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.copyright{
+    text-align: center;
+}
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+/*media query for menu 800 screen size*/ 
+@media only screen and (max-width: 800px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100% ;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    nav ul li a{
+        color:rgb(95, 100, 102);
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+}
+/*all product*/
+.row2{
+    justify-content: space-between;
+    margin: 100px auto 50px;
+}
+select{
+    border: 1px solid #f0e9ed;
+    padding: 5px;
+}
+select:focus{
+    outline: none;
+}
+
+/*single product*/
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col2 img{
+    padding: 90px;
+}
+.single-product h4{
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #131212;
+}
+input:focus{
+    outline: none;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 54%;
+    cursor: pointer;
+}
+
+/*acc page*/
+
+
+
+.box{
+    width: 400px;
+    padding: 30px;
+    position: relative;
+    left: 50%;
+    margin-top: 60%;
+    margin-bottom: 1%;
+    transform: translate(-50%, -50%);
+    background: rgb(155, 9, 82);
+    text-align: center;
+    border-radius: 5px;
+
+}
+.box h1{
+    color: #0e0d0d;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.box input[type="text"], .box input[type="password"], .box input[type="email"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #29acbd;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(10, 10, 10);
+    border-radius: 20px;
+    transition: 0.25s;
+}
+
+.box input[type="text"]:focus, .box input[type="password"]:focus, .box input[type="email"]:focus{
+    width: 240px;
+    border-color: rgb(219, 128, 23);
+
+}
+.box input[type="submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(28, 200, 206);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: rgb(17, 16, 16);
+    border-radius: 20px;
+    transition: 0.25s;
+    cursor: pointer;
+}
+
+.box input[type="submit"]:hover{
+    background: rgb(99, 3, 8);
+    
+
+}
+
+/*media query for menu le 600 screen size*/ 
+@media only screen and (max-width: 600px){
+    .row{
+        text-align: center;
+    }
+    .col2, .col3, .col4{
+        flex-basis: 100%;
+    }
+
+}

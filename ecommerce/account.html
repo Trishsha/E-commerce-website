@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Account login!</title>
+        
+        
+        <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="C:\xampp\htdocs\images/logo-velli.jpg" width="125px">
+                    </div>
+                    <nav>
+                        <ul id="menuitems">
+                            <li  class="btn"><a href="index.html">Home</a> </li>
+                            <li class="btn" ><a href="products.php">Products</a> </li>
+                            <li class="btn" ><a href="">Contact</a> </li>
+                            <li class="btn" ><a href="account.html">Account</a> </li>
+                            <li class="btn" ><a href="register.html">Register</a> </li>
+                        
+                        </ul>
+                    </nav>
+                    <img src="C:\xampp\htdocs\images/menu.png" class="menu-icon" onclick="menutoggle()">           
+                </div>
+            </div>
+
+<!--account page-->
+<div class="container vh-100">
+    <div class="row justify-content-center h-100">
+        <div class="card w-50 my-auto shadow">
+            <div class="card-header text-center bg-danger text-white">
+                <h2>Login</h2>
+            </div>
+            <div class="card-body">
+                <form action="validate.php" method="post">
+                    <div class="form-group">
+                        <label for="username">E-mail Id:</label>
+                        <input type="email" id="email" class="form-control" name="email" />
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" name="password" />
+                    </div>
+                    <input type="submit" class="btn btn-warning w-100" value="Login" name="">
+                </form>
+            </div>
+            <div class="card-footer text-right">
+                <small>&copy; Velli</small>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---footer--->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+                <img src="C:\xampp\htdocs\images/logo-velli.jpg"width="200px"height="150px">
+                <p>our main purpose is protecting the environment and reducing wastes and attaining sustainability</p>
+            </div>
+            <div class="footer-col2">
+               <h3>useful links</h3>
+               <ul>
+                   <li><a href=""><u>Coupons</u></a> </li>
+                   <li><a href=""><u>Return policy</u></a> </li>
+                   <li><a href=""><u>Join affiliate</u></a> </li>
+                   <li><a href=""><u>Blog post</u></a> </li>
+               </ul>
+               
+            </div>
+            <div class="footer-col3">
+               <h3>follow us</h3>
+               <ul>
+                   <li><a href=""><u>Facebook</u></a> </li>
+                   <li><a href=""><u>Twitter</u></a> </li>
+                   <li><a href=""><u>Instagram</u></a> </li>
+                   <li><a href=""><u>Youtube</u></a> </li>
+               </ul>
+               
+           </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020</p>
+    </div>
+</div>  
+
+
+
+<!--toggle menu-->
+<script>
+    var menuitems = document.getElementById("menuitems");
+    menuitems.style.maxHeight="0px";
+    function menutoggle()
+    {
+        if(menuitems.style.maxHeight=="0px")
+        {
+            menuitems.style.maxHeight="1500px"
+        }
+        else
+        {
+        menuitems.style.maxHeight="0px"
+        }
+
+    
+    }
+</script>
+<!--toggle form-->
+
+</body>
+</html>
