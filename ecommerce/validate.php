@@ -10,8 +10,5 @@ if(count($_POST)>0) {
         echo"<a href = index.html>Click here</a>";
 	}
 }
-else {
-    echo"wer";
-}
 
 ?>

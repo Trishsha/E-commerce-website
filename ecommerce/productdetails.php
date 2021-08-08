@@ -26,8 +26,7 @@ session_start();
                     <nav>
                         <ul id="menuitems">
                             <li><a href="index.html">Home</a> </li>
-                            <li><a href="products.html">About</a> </li>
-                            <li><a href="">Contact</a> </li>
+                            <li><a href="products.html">About</a> </li><li>
                             <li><a href="account.html">Account</a> </li>
                             <li><a href="register.html">Register</a> </li>
                         
@@ -123,7 +122,7 @@ session_start();
                  <div class="footer-col1">
                     <img src="C:\xampp\htdocs\images/logo-velli.jpg"width="200px"height="150px">
                      
-                    <h4>Our main purpose is protecting the environment and reducing wastes and attaining sustainability </h4>
+                    <h3 class="sen"><b>Write to us on : vellijewlery@gmail.com <br> We Love Feedbacks :)</b></h3>
                  </div>
                  <div class="footer-col2">
                     <h3>useful links</h3>
